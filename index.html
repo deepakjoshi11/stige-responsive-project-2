@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zomato-Breakfast</title>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link href="./filter.css" rel="stylesheet" text="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://b.zmtcdn.com/images/logo/zomato_logo_2017.png" rel="icon" />
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="col-xs-5 text-front text-center logo align-self-center">e!</div>
+            <div class="col-xs-5 text-end"><button type="button" class="btn btn-close-white buttons">Login</button>
+                <button type="button" class="btn btn-outline-light buttons">Create an account</button></div>
+        </div>
+    </div>
+    <div class="container" style="position: relative;">
+        <div class="Hding container mt-3 text-truncate">Breakfast Places in Mumbai</div>
+        <div class="container">
+            <div class="row lower-section">
+                <div class="col-md-6 col-lg-3 col-sm-5 col-xs-6 col-xl-3 mt-3">
+                    <div class="container  filters">
+                        <div class="f-heading">Filters</div>
+                        <div class="f-subheading">Select Location</div>
+                        <select class="location-box mt-2 align-self-center mb-2">
+                            <option selected disabled>Select Location</option>
+                            <option>Mumbai</option>
+                            <option>Delhi</option>
+                            <option>Chennai</option>
+                            <option>Bangalore</option>
+                            <option>Pune</option>
+                        </select>
+                        <div class="f-subheading mb-2">Cuisine</div>
+                        <div>
+                            <div class="f-body mt-1"><label><input style="background-color: #3a5075;"
+                                        type="checkbox">&nbsp;&nbsp;&nbsp;North Indian</label></div>
+                            <div class="f-body mt-1"><label><input style="background-color: #3a5075;"
+                                        type="checkbox">&nbsp;&nbsp;&nbsp;South Indian</label></div>
+                            <div class="f-body mt-1"><label><input style="background-color: #3a5075;"
+                                        type="checkbox">&nbsp;&nbsp;&nbsp;Chinese</label></div>
+                            <div class="f-body mt-1"><label><input style="background-color: #3a5075;"
+                                        type="checkbox">&nbsp;&nbsp;&nbsp;Fast Food</label></div>
+                            <div class="f-body mt-1"><label><input style="background-color: #3a5075;"
+                                        type="checkbox">&nbsp;&nbsp;&nbsp;Street Food</label></div>
+
+                        </div>
+                        <div class="f-subheading mt-3 mb-2">Cost For Two</div>
+                        <div class="f-body mt-1"><label><input style="background-color: #3a5075;" type="radio"
+                                    name="cost">&nbsp;&nbsp;&nbsp;Less than &#8377; 500</label></div>
+                        <div class="f-body mt-1"><label><input style="background-color: #3a5075;" type="radio"
+                                    name="cost">&nbsp;&nbsp;&nbsp;&#8377; 500 to &#8377; 1000</label></div>
+                        <div class="f-body mt-1"><label><input style="background-color: #3a5075;" type="radio"
+                                    name="cost">&nbsp;&nbsp;&nbsp;&#8377; 1000 to &#8377; 1500</label></div>
+                        <div class="f-body mt-1"><label><input style="background-color: #3a5075;" type="radio"
+                                    name="cost">&nbsp;&nbsp;&nbsp;&#8377; 1500 to &#8377; 2000</label></div>
+                        <div class="f-body mt-1"><label><input style="background-color: #3a5075;" type="radio"
+                                    name="cost">&nbsp;&nbsp;&nbsp;&#8377; 2000+</label></div>
+                        <div class="f-heading mt-3 mb-2">Sort</div>
+                        <div class="f-body mt-1"><label><input style="background-color: #3a5075;" type="radio"
+                                    name="sort">&nbsp;&nbsp;&nbsp;Price low to high</label></div>
+                        <div class="f-body mt-1"><label><input style="background-color: #3a5075;" type="radio"
+                                    name="sort">&nbsp;&nbsp;&nbsp;Price high to low</label></div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-9 col-sm-7 col-xs-6 col-xl-9">
+                    <div class="detailbox mt-3"><img src="./image.png"
+                        class="main-img" />
+                     <div class="heading-in text-truncate">The Big Chill Cakery</div>
+                     <div class="text2 ">FORT</div>
+                     <div class="address text-truncate"> Shop 1, Plot D, Samruddhi Complex, Chincholi …</div>
+                     <hr style="margin-top: 17px; margin-bottom: 0px;">
+                     <div CLASS="niche-text mt-1">CUISINES: <span class="niche-right" id="left-ko">Bakery</span></div>
+                      <div CLASS="niche-text ">COST FOR TWO: <span class="niche-right  mx-5">₹700</span></div>
+                     </div>
+                 <div class=" detailbox mt-3 ml-2">
+                    <img src="./image.png" class="main-img" />
+                    <div class="heading-in text-truncate">The Bake Shop</div>
+                    <div class="text2 ">FORT</div>
+                    <div class="address text-truncate"> Shop 1, Plot D, Samruddhi Complex, Chincholi …</div>
+                    <hr style="margin-top: 17px; margin-bottom: 0px;">
+                    <div CLASS="niche-text mt-1">CUISINES: <span class="niche-right" id="left-ko">Bakery</span></div>
+                    <div CLASS="niche-text ">COST FOR TWO: <span class="niche-right  mx-5">₹700</span></div>
+                 </div>
+                 <div class="mt-5 text-center mb-4">
+                     <span class="page-b"><</span>
+                     <span class="page-b-1">1</span>
+                     <span class="page-b-2">2</span>
+                     <span class="page-b-2">3</span>
+                     <span class="page-b-4">4</span>
+                     <span class="page-b-4">5</span>
+                     <span class="page-b">></span>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
